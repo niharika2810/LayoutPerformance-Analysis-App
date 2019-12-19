@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image"
+            app:layout_constraintBottom_toBottomOf="@+id/edit"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@+id/container"
+            app:layout_constraintRight_toRightOf="@+id/container"
+            app:layout_constraintTop_toTopOf="@+id/container"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/info_background"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_menu_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/container"
+            app:layout_constraintRight_toRightOf="@+id/container"
+            app:layout_constraintTop_toTopOf="@+id/container"
+            app:layout_constraintVertical_bias="0.19" />
+
+        <TextView
+            android:id="@+id/edit_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Edit Details"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/container"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="@+id/contact"
+            app:layout_constraintRight_toRightOf="@+id/contact"
+            app:layout_constraintTop_toBottomOf="@+id/edit_details" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:labelFor="@+id/name"
+            android:text="Name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/name"
+            app:layout_constraintLeft_toLeftOf="@+id/container" />
+
+        <TextView
+            android:id="@+id/contact_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:labelFor="@+id/contact_label"
+            android:text="Contact"
+            app:layout_constraintBaseline_toBaselineOf="@+id/contact"
+            app:layout_constraintLeft_toLeftOf="@+id/container" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Enter your number"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@+id/contact_label"
+            app:layout_constraintRight_toRightOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/age_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:labelFor="@+id/contact_label"
+            android:text="Age"
+            app:layout_constraintBaseline_toBaselineOf="@+id/age"
+            app:layout_constraintLeft_toLeftOf="@+id/container" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Enter your age"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@+id/contact_label"
+            app:layout_constraintRight_toRightOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="SAVE"
+            app:layout_constraintRight_toLeftOf="@+id/discard"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+        <Button
+            android:id="@+id/discard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="0dp"
+            android:text="@string/discard"
+            app:layout_constraintBaseline_toBaselineOf="@+id/upload"
+            app:layout_constraintRight_toRightOf="@+id/container" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:fadingEdge="vertical"
+            android:text="@string/description"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@+id/container"
+            app:layout_constraintRight_toRightOf="@+id/container"
+            app:layout_constraintTop_toBottomOf="@+id/age" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
