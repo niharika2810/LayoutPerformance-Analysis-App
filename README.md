@@ -1,2 +1,2 @@
 # LayoutPerformance
-Measuring various layout performances
+This project contain various layouts for same UI screens to measure performance 
