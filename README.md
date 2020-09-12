@@ -5,6 +5,6 @@ Imagine, you’ve just joined a new job and you need to shop for a whole new war
 
 Choosing a layout for your app and website is also a similar process :-).
 
-Please check the <a href="https://medium.com/1mgofficial/constraintlayout-vs-other-layouts-a-battle-towards-performance-part-1-14d8116e876e">medium articles</a> for more explanation.
+Please check the <a href="https://thedroidlady.com/2019-10-01-constraintlayout-vs-other-layouts-a-battle-towards-performance-part-1">articles</a> for more explanation.
 
 Happy Coding!!
